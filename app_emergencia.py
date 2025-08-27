@@ -224,7 +224,7 @@ if dfs:
         colores_vis = obtener_colores(pred_vis["Nivel_Emergencia_relativa"])
 
         # --------- Gráfico 1: EMERGENCIA RELATIVA DIARIA ---------
-        st.subheader("EMERGENCIA RELATIVA DIARIA - BORDENAVE 38°22'41.6"S 60°16'34.8"W"")
+        st.subheader("EMERGENCIA RELATIVA DIARIA - BORDENAVE")
 
         fig_er = go.Figure()
         fig_er.add_bar(
@@ -301,7 +301,7 @@ if dfs:
         st.plotly_chart(fig_er, use_container_width=True, theme="streamlit")
 
         # --------- Gráfico 2: EMEAC (rango) ---------
-        st.subheader("EMERGENCIA ACUMULADA DIARIA - BORDENAVE 38°22'41.6"S 60°16'34.8"W")
+        st.subheader("EMERGENCIA ACUMULADA DIARIA - BORDENAVE")
 
         fig = go.Figure()
         fig.add_trace(go.Scatter(
